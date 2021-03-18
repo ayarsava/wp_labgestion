@@ -949,7 +949,7 @@ if ( ! function_exists( 'wp_archive_experiencias_x_recurso' ) ) {
       $term = get_term_by('slug', $recurso, 'recurso'); 
       $tag_name = $term->name;
       if($recurso == 'capacitaciones') {
-        echo '<div class="mb-1 slick-slide" style="width: 350px;"><div class="card w-100 bg-primary" ><a href="#" rel="slidemark" class="stretched-link" tabindex="0"></a><div class="card-body position-relative"><h5 class="card-title font-weight-bold mt-2 mb-4 h1">Aula virtual</h5><div class="card-text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div><div class="position-absolute" style="bottom:1rem; right:1rem;"><a href="#" class="btn btn-outline-light" >Conocer más</a></div></div></div></div>';
+        echo '<div class="mb-1 slick-slide" style="width: 350px;"><div class="card w-100 bg-primary" ><a href="https://cursos.mp.gba.gob.ar/login/" rel="slidemark" class="stretched-link" tabindex="0" target="_blank"></a><div class="card-body position-relative"><h5 class="card-title font-weight-bold mt-2 mb-4 h1">Aula virtual</h5><div class="card-text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div><div class="position-absolute" style="bottom:1rem; right:1rem;"><a href="https://cursos.mp.gba.gob.ar/login/" class="btn btn-outline-light" target="_blank">Conocer más</a></div></div></div></div>';
       }
       while ( $query_catalogo->have_posts() ) : $query_catalogo->the_post();
         if($recurso == 'conferencias') {
